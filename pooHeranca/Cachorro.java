@@ -1,49 +1,20 @@
-package pooHeranca;
+package Polimorfismo;
 
 public class Cachorro extends Animal{
 
-	private String cor;
-	private double altura;
-	private double peso;
-	
-	public Cachorro(String nome, int idade, String emitirSom, String acao, String cor, double peso,
-			double altura) {
+	public Cachorro() {
 		
-		super(nome, idade, emitirSom, acao);
+		super("Francisco", 6);
+	}
+
+	@Override
+	public void barulho(String barulho) {
 		
-		this.cor = cor;
-		this.altura = altura;
-		this.peso = peso;
+		System.out.println("Au au");
 	}
-
-	public double getAltura() {
-		return altura;
-	}
-
-	public void setAltura(double altura) {
-		this.altura = altura;
-	}
-
-	public double getPeso() {
-		return peso;
-	}
-
-	public void setPeso(double peso) {
-		this.peso = peso;
-	}
-
-	public String getCor() {
-		return cor;
-	}
-
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
-	
-	public void imprimirInfo() {
+	@Override
+	public void acao(String acao) {
 		
-		System.out.println("\nNome: "+getNome()+ "\nIdade: "+getIdade()+ " Anos"+"\nSom emitido: "+getEmitirSom()+
-				"\nAção: "+getAcao()+ "\nCor: "+cor+ "\nAltura: "+altura+" cm"+"\nPeso: "+peso+ " KG");
+		System.out.println("Correr");
 	}
-		
 }

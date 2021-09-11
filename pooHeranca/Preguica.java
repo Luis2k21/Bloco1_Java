@@ -1,47 +1,19 @@
-package pooHeranca;
+package Polimorfismo;
 
 public class Preguica extends Animal{
 
-	private String cor;
-	private double altura;
-	private double peso;
-	
-	public Preguica(String nome, int idade, String emitirSom, 
-			String acao, String cor, double altura, double peso) {
+	public Preguica() {
 		
-		super(nome, idade, emitirSom, acao);
-		this.cor = cor;
-		this.altura = altura;
-		this.peso = peso;
+		super("Adilson", 7);
 	}
-
-	public String getCor() {
-		return cor;
-	}
-
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
-
-	public double getAltura() {
-		return altura;
-	}
-
-	public void setAltura(double altura) {
-		this.altura = altura;
-	}
-
-	public double getPeso() {
-		return peso;
-	}
-
-	public void setPeso(double peso) {
-		this.peso = peso;
-	}
-	
-	public void imprimirInfo() {
+	@Override
+	public void barulho(String barulho) {
 		
-		System.out.println("\nNome: "+getNome()+ "\nIdade: "+getIdade()+ " Anos"+"\nSom emitido: "+getEmitirSom()+
-				"\nAção: "+getAcao()+ "\nCor: "+cor+ "\nAltura: "+altura+" cm"+"\nPeso: "+peso+ " KG");
+		System.out.println("Zzzzzzzzzz");
+	}
+	@Override
+	public void acao(String acao) {
+		
+		System.out.println("Dormir");
 	}
 }

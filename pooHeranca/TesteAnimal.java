@@ -1,21 +1,25 @@
-package pooHeranca;
+package Polimorfismo;
 
 public class TesteAnimal {
 
 	public static void main(String[] args) {
 		
-		Cachorro animal1 = new Cachorro("Pipoca", 4, "Au Au", "Correr", "Avermelhado", 32, 1.25);
-		animal1.imprimirInfo();
+		Cachorro cachorro = new Cachorro();
+		Cavalo cavalo = new Cavalo();
+		Preguica preguica = new Preguica();
 		
-		System.out.println("\n***************************");
+		System.out.println("\nNome: "+cachorro.getNome()+ "\nIdade: "+cachorro.getIdade()+" Anos");
+		cachorro.barulho("barulho");
+		cachorro.acao("acao");
+		System.out.println("\n*************************");
 		
-		Cavalo animal2 = new Cavalo("Trovão", 9, "iiirrrrí rilinchin", "Correr", "Marrom", 1.76, 80);
-		animal2.imprimirInfo();
+		System.out.println("\nNome: "+cavalo.getNome()+ "\nIdade: "+cavalo.getIdade()+ " Anos");
+		cavalo.barulho("barulho");
+		cavalo.acao("acao");
+		System.out.println("\n**************************");
 		
-		System.out.println("\n***************************");
-		
-		Preguica animal3 = new Preguica("Adilson", 7, "Zzzzzz", "Dorme", "Cinza", 50, 18);
-		animal3.imprimirInfo();
+		System.out.println("\nNome: "+preguica.getNome()+ "\nIdade: "+preguica.getIdade()+ " Anos");
+		preguica.barulho("barulho");
+		preguica.acao("acao");
 	}
-
 }
