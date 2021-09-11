@@ -1,4 +1,4 @@
-package pooHierarquia;
+package pooHeranca;
 
 public class TesteAnimal {
 
@@ -9,7 +9,7 @@ public class TesteAnimal {
 		
 		System.out.println("\n***************************");
 		
-		Cavalo animal2 = new Cavalo("Trovão", 9, "iiirrrrí, rilinchin", "Correr", "Marrom", 1.76, 80);
+		Cavalo animal2 = new Cavalo("Trovão", 9, "iiirrrrí rilinchin", "Correr", "Marrom", 1.76, 80);
 		animal2.imprimirInfo();
 		
 		System.out.println("\n***************************");

@@ -1,4 +1,4 @@
-package pooHierarquia;
+package pooHeranca;
 
 public class Animal {
 

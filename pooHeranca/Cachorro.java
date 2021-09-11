@@ -1,4 +1,4 @@
-package pooHierarquia;
+package pooHeranca;
 
 public class Cachorro extends Animal{
 
@@ -42,8 +42,8 @@ public class Cachorro extends Animal{
 	
 	public void imprimirInfo() {
 		
-		System.out.println("\nNome: "+getNome()+ "\nIdade: "+getIdade()+ "\nSom emitido: "+getEmitirSom()+
-				"\nAção aplicada: "+getAcao()+ "\nCor: "+cor+ "\nAltura: "+altura+" cm"+"\nPeso: "+peso+ " KG");
+		System.out.println("\nNome: "+getNome()+ "\nIdade: "+getIdade()+ " Anos"+"\nSom emitido: "+getEmitirSom()+
+				"\nAção: "+getAcao()+ "\nCor: "+cor+ "\nAltura: "+altura+" cm"+"\nPeso: "+peso+ " KG");
 	}
 		
 }
